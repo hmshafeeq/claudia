@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build-app": "bun run tauri build --target universal-apple-darwin && cp ./src-tauri/target/universal-apple-darwin/release/claudia ~/.config/.claude",
     "preview": "vite preview",
     "tauri": "tauri"
   },
